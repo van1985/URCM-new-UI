@@ -11,7 +11,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/urcm.css">
     <!-- endbuild -->
   </head>
   <body ng-app="pocLibsApp">
@@ -20,6 +20,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <!--
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
@@ -43,19 +44,24 @@
               <li><a ng-href="#/">Contact</a></li>
             </ul>
           </div>
+          
         </div>
       </div>
     </div>
+    -->
 
-    <div class="container">
-    <div ng-view=""></div>
+    <div class="app">
+        <audio id="audio_remote" ></audio>
+        <div ng-view=""></div>
     </div>
 
+    <!--
     <div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
     </div>
+    -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -85,6 +91,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <!-- endbuild -->

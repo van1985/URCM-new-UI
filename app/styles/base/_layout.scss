@@ -1,0 +1,8 @@
+html, body, .app , div[ng-view=""], .main {
+  height: 100%;
+}
+
+body {
+  color: palette(black);
+  background-color: palette(gray, lighter);
+}

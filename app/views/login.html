@@ -1,0 +1,15 @@
+<div class="login">  
+  <form ng-submit="login()" novalidate>
+    <div class="logo-urcm"></div>
+    <div class="title-urcm">
+    	<div class="call-title">CALL</div>
+    	<div class="sears-title">SEARS</div>
+    </div>
+    <div class="credentials-container">
+      <p class="alert-error">The enterprise ID / password combination you entered is incorrect. Try again.</p>
+      <input type="text" class="login-input" placeholder="enterprise ID" ng-model="user.name" required>
+      <input type="password" class="login-input" placeholder="enterprise password" ng-model="user.password" required>
+      <button class="login-button">LOG IN</button>
+    </div>    
+  </form>
+</div>
