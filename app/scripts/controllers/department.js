@@ -8,16 +8,19 @@
  * Controller of the pocLibsApp
  */
 angular.module('pocLibsApp')
-  .controller('LoginCtrl', function ($scope,$location) {
+  .controller('DepartmentCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  
-    $scope.login = function() {
-    	$location.path("/department");
+
+    $scope.departments={
+    	'sporting':false,
+    	'appliances':false,
+    	'jewelry': false,
+    	'garden': false,
+    	'electronics':false,
+    	'tools':false
     };
-
-
   });
