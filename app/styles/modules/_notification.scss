@@ -1,0 +1,50 @@
+.notification{
+  width:100%;
+  height:63%;
+  display:inline-block;
+  overflow:scroll;
+
+  .container {
+		  display: table;
+		  padding-top:10px;
+		  padding-bottom:10px;
+		  border-bottom: 1px solid #C3C3C3;
+	}
+  
+  .column {
+		  display: table-cell;
+		  vertical-align:top;
+
+		  .circle{
+		  	  width: 42px;
+			  height: 42px;
+			  background-color: #C7C7C7;
+			  border-radius: 50%;
+			  overflow: hidden;
+			  margin: 0 auto;
+			  
+			  .contact-logo{
+			  	background: url("../images/contact-notification.png");
+			    width: 100%;
+			    background-repeat: no-repeat;
+			    height: 100%;
+			    background-position: 8px 6px;
+			  }
+		  }
+
+		  .notification-from{
+		  	color: #515151;
+		  	font-size:14px;
+		  	font-weight:bold;
+		  	float:left;
+		  	margin-left:12px;
+		  }
+		  
+		  .notification-text{
+		  	color: #515151;
+		  	font-size:12px;
+		  	float:left;
+		  	margin-left:12px;
+		  }
+	}
+}

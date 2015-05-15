@@ -23,9 +23,9 @@ angular
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
-      .when('/main', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/notification', {
+        templateUrl: 'views/notification.html',
+        controller: 'NotificationCtrl'
       })
       .when('/department', {
         templateUrl: 'views/department.html',

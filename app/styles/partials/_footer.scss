@@ -1,0 +1,52 @@
+.footer{
+	 height: 58px;
+	 width: 100%;
+	 background-color: #C3C3C3;
+	 bottom: 0;
+	 padding-top: 1px;
+
+	.container {
+	    margin-right: auto;
+  		margin-left: auto;
+  		padding-left: 15px;
+  		padding-right: 15px;
+  		height: 75%;
+  		display: table;
+  		margin-top:5px;
+	}
+
+	.column {
+	  display: table-cell;
+	  height: 78%;
+	  
+	  &.outside{
+	  	width:30%;
+	  }
+
+	  &.center{
+	  	width:40%;
+	  }
+
+	  &.borders{
+	  	border-right: 1px solid #2B81A7;
+	  	border-left: 1px solid #2B81A7;
+	  }
+
+	  .call-icon{
+	  	  background: url("../images/call-footer.png");
+		  width: 32px;
+		  height: 32px;
+		  margin: 0 auto;
+		  margin-top: 5px;
+	  }
+
+	  .contact-icon{
+	  	  background: url("../images/contact-footer.png");
+		  width: 33px;
+		  height: 32px;
+		  margin: 0 auto;
+		  background-repeat: no-repeat;
+	  }
+
+	}
+}

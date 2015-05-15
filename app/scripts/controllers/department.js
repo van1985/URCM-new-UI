@@ -8,7 +8,7 @@
  * Controller of the pocLibsApp
  */
 angular.module('pocLibsApp')
-  .controller('DepartmentCtrl', function ($scope) {
+  .controller('DepartmentCtrl', function ($scope,$location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -23,4 +23,9 @@ angular.module('pocLibsApp')
     	'electronics':false,
     	'tools':false
     };
+
+    $scope.connect = function() {
+      $location.path("/notification");
+    };
+
   });

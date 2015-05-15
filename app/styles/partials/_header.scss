@@ -1,0 +1,72 @@
+.header{
+	width:100%;
+	height:75px;
+	background-color: #2C80A7;
+
+	.logo-container{
+		float:left;
+		display:inline-block;
+		width:10%;
+	
+		.logo-header{
+		  height: 47px;
+	      width: 46px;
+	      background: url("../images/logo-header.png");
+	      display: inline-block;
+		  margin-top: 6px;
+		  margin-left:10px;
+
+		  .circle {
+		    width: 18px;
+		    height: 16px;
+		    border-radius: 50%;
+		    overflow: hidden;
+		    margin: 0 auto;
+		    margin-top:17px;
+
+		    &.online{
+		      background-color: #73E459;
+		    }
+		    &.busy{
+		      background-color:red;
+		    }
+		    &.away{
+		      background-color:orange;
+		    }
+		    &.offline{
+		      background-color:#C3C3C3;
+		    }
+
+		  }
+		}
+
+		.status-title{
+		  display: block;
+		  font-size: 10px;
+		  color: white;
+		  margin-left: 15px;
+		  margin-top:3px;
+		}
+	}
+
+	.username{
+		width:80%;
+		color:white;
+		font-size:18px;
+		display:inline-block;
+		font-weight:300;
+		float:left;
+		text-align:center;
+		margin-top:25px;
+	}
+
+	.burger-nav{
+		float:left;
+		width:10%;
+		height: 22px;
+	    background: url("../images/burger-nav.png");
+	    background-repeat:no-repeat;
+	    display: inline-block;
+		margin-top: 25px;
+	}
+}

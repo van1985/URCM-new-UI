@@ -8,10 +8,15 @@
  * Controller of the pocLibsApp
  */
 angular.module('pocLibsApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('NotificationCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $scope.user={
+    	status: 'online'
+    };
+
   });

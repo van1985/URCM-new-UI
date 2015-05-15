@@ -10,6 +10,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "base/layout";
 @import "base/reset";
 
-@import "partials/main";
-@import "partials/login";
-@import "partials/department";
+@import "partials/header";
+@import "partials/tabs";
+@import "partials/footer";
+
+@import "modules/notification";
+@import "modules/login";
+@import "modules/department";
