@@ -13,7 +13,13 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "partials/header";
 @import "partials/tabs";
 @import "partials/footer";
+@import "partials/nav_burger";
 
 @import "modules/notification";
 @import "modules/login";
 @import "modules/department";
+@import "modules/contacts";
+@import "modules/numpad";
+@import "modules/incoming_call";
+@import "modules/calling";
+@import "modules/call"

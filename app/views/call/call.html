@@ -1,0 +1,66 @@
+<div ng-controller="callCtrl" class="call">
+
+<div class="header-incoming">
+
+	<div class="circle">
+		<div class="contact-img"></div>
+	</div>
+	
+	<div class="title-container">
+		<div class="title"> Cecilia Gauna</div>
+	</div>
+</div>
+<div class="duration-container">
+	<div class="duration-title">00:05</div>
+</div>
+
+<!-- buttons -->
+<div class="body-container">
+<div class="container">
+  <div class="column outside-columns">
+    <div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
+      <div class="icon mute"></div>
+    </div>
+  </div>
+  <div class="column middle-column"></div>
+  <div class="column outside-columns">
+    <div class="circle" ng-class="{pressedgreen: departments.appliances}" ng-click="departments.appliances= !departments.appliances">
+      <div class="icon speaker"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="column outside-columns">
+    <div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
+      <div class="arrow"></div>
+      <div class="transfer"></div>
+    </div>
+  </div>
+  <div class="column middle-column"></div>
+  <div class="column outside-columns">
+    <div class="circle" ng-class="{pressedgreen: departments.appliances}" ng-click="departments.appliances= !departments.appliances">
+      <div class="arrow"></div>
+      <div class="consultative-transfer"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="column outside-columns"></div>
+  <div class="column middle-column">
+  	<div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
+      <div class="icon dialpad"></div>
+    </div>
+  </div>
+  <div class="column outside-columns"></div>
+</div>
+
+</div>
+
+<div class="container-buttons">
+	<div class="button red">
+		<div class="hangup-img"></div>	
+	</div>
+</div>
+</div>

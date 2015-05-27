@@ -25,7 +25,7 @@ angular.module('pocLibsApp')
     };
 
     $scope.connect = function() {
-      $location.path("/notification");
+      $location.path("/contacts");
     };
 
   });

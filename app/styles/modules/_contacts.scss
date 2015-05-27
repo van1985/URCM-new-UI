@@ -1,0 +1,96 @@
+.contacts{
+  width:100%;
+  height:73%;
+  display:inline-block;
+  overflow:scroll;
+
+  .container {
+		  display: table;
+		  padding-top:10px;
+		  padding-bottom:10px;
+		  border-bottom: 1px solid #C3C3C3;
+		  width: 100%;
+		  padding-left: 0px;
+  		  padding-right: 0px;
+	}
+  
+  .column {
+		  display: table-cell;
+		  vertical-align:top;
+
+		  .w20{
+		  	width:20%;
+		  }
+
+		  .w80{
+		  	width:80%;
+		  }
+
+		  .call-img{
+		  	height: 32px;
+		    width: 32px;
+		    background: url("../images/phone_32x32_blue.svg");
+		    display: inline-block;
+			margin-top: 6px;
+			margin-right:20px;
+			float:right;
+		  }
+
+		  .circle{
+		  	  width: 42px;
+			  height: 42px;
+			  border:1px solid #C7C7C7;
+			  border-radius: 50%;
+			 
+			  margin: 0 auto;
+			  
+			  .contact-logo{
+			  	background: url("../images/user_32x32_grey.svg");
+			    width: 100%;
+			    background-repeat: no-repeat;
+			    height: 100%;
+			    background-position: 4px 3px;
+
+			 .circle {
+		      width: 18px;
+			  height: 16px;
+			  border-radius: 50%;
+			  overflow: hidden;
+			  float: left;
+			  margin-top: 30px;
+
+		    &.online{
+		      background-color: #73E459;
+		    }
+		    &.busy{
+		      background-color:red;
+		    }
+		    &.away{
+		      background-color:orange;
+		    }
+		    &.offline{
+		      background-color:#C3C3C3;
+		    }
+
+		  }
+
+			  }
+		  }
+
+		  .notification-from{
+		  	color: #515151;
+		  	font-size:14px;
+		  	font-weight:bold;
+		  	float:left;
+		  	margin-left:12px;
+		  	margin-top:10px;
+		  }
+		  
+		  .notification-text{
+		  	color: #515151;
+		  	font-size:12px;
+		  	float:left;
+		  	margin-left:12px;
+		  }
+	}
+}

@@ -1,0 +1,66 @@
+.numpad{
+  width:100%;
+  height:73%;
+  display:inline-block;
+  overflow:scroll;
+
+  	.numpad-container{
+	   width: 100%;
+	   position: absolute;
+	   height: 78%;
+	   overflow:scroll;
+
+	   .container {
+		  display: table;
+		  margin-top:15px;
+		}
+		.column {
+		  display: table-cell;
+
+		  .input-number{
+		  	  border: none;
+			  border-bottom: solid 1px #C7C7C7;
+			  width: 120%;
+			  float: left;
+			  margin-right: 15px;
+		  }
+
+		  &.outside-columns{
+
+		  	  &.middle-column{
+		  	  	padding-left: 35px;
+		  	  	padding-right: 35px;
+		  	  }
+
+			  .circle {
+				  width: 58px;
+				  height: 58px;
+				  background-color: #C7C7C7;
+				  border-radius: 50%;
+				  overflow: hidden;
+				  margin: 0 auto;
+
+				  &.del-circle{
+				  	width:35px;
+				  	height:35px;
+				  }
+
+			}
+
+			.number-title{
+				  font-size: 25px;
+				  color: #FFFFFF;
+				  text-align: center;
+				  font-family: tahoma;
+				  margin-top: 12px;
+				  &.font-del{
+				  	font-size: 16px;	
+				  	margin-top:8px;
+				  }
+			}
+		  }
+
+		}
+
+	}
+}

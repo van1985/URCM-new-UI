@@ -1,0 +1,105 @@
+.navburger{
+  background-color: #494949;
+
+  .container-nav{
+    width: 100%;
+
+    &.second-container{
+      margin-top:-6px;
+    }
+
+  }
+
+  .container-title{
+    background-color:#999999;
+    height:24px;
+    margin-top:5px;
+
+    .second-container{
+      margin-top:-6px;
+    }
+
+    .title{
+      color:white;
+      font-size:16px;
+      font-family:Arial;
+      margin-left:10px;
+    }
+  }
+
+  .container-option{
+    height:67px;
+    border-bottom:1px solid #666666;
+    margin-left:8px;
+    margin-right:8px;
+
+    .row-option{
+      display: inline-block;
+      padding-top: 15px;
+
+      .account-info-navburger{
+        height: 32px;
+        width: 30px;
+        margin-left: 10px;
+        margin-top: 3px;
+        float:left;
+        background-image: url('../images/account-info-icon.png');
+      }
+
+      .voicemail-info{
+        height: 26px;
+        width: 38px;
+        margin-left: 3px;
+        margin-top: 3px;
+        float:left;
+        background-image: url('../images/voicemail-info-icon.png');
+      }
+
+      .logout-icon{
+        height: 33px;
+        width: 29px;
+        margin-left: 10px;
+        margin-top: 3px;
+        float:left;
+        background-image: url('../images/logout-icon-navburger.png');
+      }
+
+      .department-icon{
+        height: 32px;
+        width: 32px;
+        margin-left: 10px;
+        margin-top: 3px;
+        float:left;
+        background-image: url('../images/office_32x32.svg');
+      }
+
+      .bug-icon{
+        height: 35px;
+        width: 38px;
+        margin-left: 3px;
+        margin-top: 3px;
+        float:left;
+        background-image: url('../images/bug-info-icon.png');
+      }
+
+      .name{
+        color: white;
+        font-size: 14px;
+        float: left;
+        margin-top: 8px;
+        margin-left: 50px;
+
+        &.center-width{
+          width: 130px;
+        }
+
+        .sub-label{
+          font-size:12px;
+          color: #1776BB;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
