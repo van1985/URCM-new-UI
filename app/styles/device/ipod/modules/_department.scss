@@ -148,6 +148,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
 	}
 
+	.select-all-button{
+	  background-color: #2C81A8;
+	  border-radius: 50%;
+	  width: 100px;
+	  height: 100px;
+	  position: absolute;
+	  bottom: -40px;
+	  margin-left: -35px;
+	  background-image: url("../images/list-32x32.svg");
+	  background-repeat: no-repeat;
+	  background-position: 47px 20px;
+	}
+
 	.connect-button{
 	   margin: 0 auto;
 	   height: 39px;
