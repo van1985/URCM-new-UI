@@ -15,11 +15,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "partials/footer";
 @import "partials/nav_burger";
 
-@import "modules/notification";
-@import "modules/login";
-@import "modules/department";
-@import "modules/contacts";
-@import "modules/numpad";
-@import "modules/incoming_call";
-@import "modules/calling";
-@import "modules/call"
+@import "modules/ipod/notification";
+@import "modules/ipod/login";
+@import "modules/ipod/department";
+@import "modules/ipod/contacts";
+@import "modules/ipod/numpad";
+@import "modules/ipod/incoming_call";
+@import "modules/ipod/calling";
+@import "modules/ipod/call";
+
+@media all and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	@import "modules/ipad/login";
+	@import "modules/ipad/department";
+	@import "modules/ipad/contacts";
+	@import "modules/ipad/incoming_call";
+	@import "modules/ipad/calling";
+	@import "modules/ipad/call";
+}

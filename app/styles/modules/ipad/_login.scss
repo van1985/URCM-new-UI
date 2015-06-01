@@ -1,0 +1,111 @@
+.login {
+  padding-top: $base-line-height*6;
+    background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #2c81a8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#2c81a8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#2c81a8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2c81a8',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 100%;
+	  
+  .logo-urcm {
+      height: 82px;
+      width: 80px;
+      background: url("../images/logo-URCM.png");
+      display: block;
+	    margin: 0 auto;
+    }
+
+    .title-urcm{
+      display: block;
+  	  margin: 0 auto;
+  	  width: 80%;
+  	  padding:0 30%;
+  	  margin-top:45px;
+  	  font-size:34px;
+  	  font-weight:300;
+      margin-left:10%;
+	  .call-title{
+	  	  float: left;
+  		  display: inline-block;
+  		  color:#FFFFFF;
+	  }
+
+	  .sears-title{
+	      float: left;
+  		  display: inline-block;
+  		  color:#62F368;
+	  }
+    }
+
+   .credentials-container{
+   		width:40%;
+   		display: block;
+   		margin:0 auto;
+   		padding-top:65px;
+
+   		.alert-error{
+   			color: #9F0404;
+   			font-weight: bold;
+   			width:80%;
+   			display: block;
+   			margin:0 auto;
+   			padding-bottom:8px;
+        font-size:16px;
+   		}
+
+   		.login-input{
+   			width:80%;
+        font-size:20px;
+   			display: block;
+   			margin:0 auto;
+   			height: 50px;
+   			border-radius:4px;
+   			border:none;
+   			@include padding-leader(.5);
+      		@include padding-trailer(.5);
+      		@include trailer;
+      		padding-left: 1rem;
+   			margin-top:0px;
+   			margin-bottom:14px;
+   			&::-webkit-input-placeholder {
+		         color: palette(white);
+		         font-style: italic;
+		         font-weight: 300;
+		      }
+		      &:-moz-placeholder {
+		         color: palette(white);
+		         font-style: italic;
+		         font-weight: 300;  
+		      }
+		      &::-moz-placeholder {
+		         color: palette(white);
+		         font-style: italic;
+		         font-weight: 300;  
+		      }
+		      &:-ms-input-placeholder {  
+		         color: palette(white);
+		         font-style: italic;
+		         font-weight: 300;  
+		      }
+   		}
+
+   		.login-button{
+   			width:80%;
+   			display: block;
+   			margin:0 auto;
+   			height: 60px;
+   			width: 150px;
+   			margin-top:25px;
+   			border-radius:4px;
+   			border:none;
+   			background-color: #51DA58;
+   			color: #FFFFFF;
+   			font-weight: bold;
+   			font-size:20px;
+   		}
+   }
+}

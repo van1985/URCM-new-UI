@@ -1,0 +1,113 @@
+.incoming-call{
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #2c81a8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#2c81a8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1e5799 0%,#2c81a8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2c81a8',GradientType=0 ); /* IE6-9 */
+
+
+  .container-img{
+
+  	  text-align: center;
+  	  margin-top:150px;
+
+	  .circle {
+		  width: 120px;
+		  height: 120px;
+		  border: 1px solid #C7C7C7;
+		  border-radius: 50%;
+		  overflow: hidden;
+		  margin: 0 auto;
+		  .contact-img{
+		  	height: 80px;
+		  	width: 80px;
+			background: url("../images/user.svg");
+			display: inline-block;
+			margin-top:6px;
+		  }
+	  }
+  }
+
+
+    .header-incoming{
+  	  padding-top: 20px;
+	  margin: 0 auto;
+	  display: table;
+	  height: 80px;
+
+	  .title-call{
+	  		font-size: 20px;
+			float: left;
+			font-weight: 100;
+			font-family: inherit;
+			color:white;
+	  		text-align: center;
+	  	}
+
+  	.title-container{
+  		  width: auto;
+		  height: 34x;
+		  text-align: center;
+		  padding-top: 8px;
+
+		  .title{
+		  	color: #FFFFFF;
+		  	font-size:34px;
+		  	font-family: Arial;
+		  }
+  	}
+  }
+  .container-buttons{
+  	  position: absolute;
+	  bottom:10px;
+	  margin-left:20%;
+
+	  .button{
+	  	width:140px;
+	  	height: 140px;
+	  	border-radius:50%;
+	  	display: inline-block;
+	  	margin: 34px;
+	  	margin-right:200px;
+
+	  	.hangup-img{
+		  	height: 80px;
+		  	width: 80px;
+			background: url("../images/phone-hang-up-80x80.svg");
+			display: inline-block;
+			margin-top: 24px;
+  			margin-left: 26px;
+		 }
+
+		 .answer-img{
+		  	height: 80px;
+		  	width: 80px;
+			background: url("../images/phone-80x80.svg");
+			display: inline-block;
+			margin-top: 26px;
+  			margin-left: 32px;
+		 }
+
+	  	&.red{
+	  		background-color:#E15546;
+	  	}
+	  	&.green{
+	  		background-color:#50E669;
+	  	}
+
+	  	.title{
+	  		font-size:20px;
+	  		color:white;
+	  		text-align: center;
+	  		padding-top: 20px;
+	  	}
+
+	  }
+  }
+}
