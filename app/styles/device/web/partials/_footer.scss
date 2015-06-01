@@ -1,0 +1,53 @@
+.footer{
+	 height: 10%;
+	 position:absolute;
+	 width: 100%;
+	 background-color: #C3C3C3;
+	 bottom: 0;
+	 padding-top: 1px;
+
+	.container {
+	    margin-right: auto;
+  		margin-left: auto;
+  		padding-left: 15px;
+  		padding-right: 15px;
+  		height: 75%;
+  		display: table;
+  		margin-top:5px;
+	}
+
+	.column {
+	  display: table-cell;
+	  height: 78%;
+	  
+	  &.outside{
+	  	width:30%;
+	  }
+
+	  &.center{
+	  	width:40%;
+	  }
+
+	  &.borders{
+	  	border-right: 1px solid #2B81A7;
+	  	border-left: 1px solid #2B81A7;
+	  }
+
+	  .call-icon{
+	  	  background: url("../images/dial-pad-60x60.svg");
+		  width: 60px;
+		  height: 60px;
+		  margin: 0 auto;
+		  margin-top: 5px;
+	  }
+
+	  .contact-icon{
+	  	  background: url("../images/address-book-64x64.svg");
+		  width: 64px;
+		  height: 64px;
+		  margin: 0 auto;
+		  background-repeat: no-repeat;
+	  }
+
+	}
+}

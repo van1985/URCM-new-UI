@@ -17,9 +17,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 		width:10%;
 	
 		.logo-header{
-		  height: 47px;
-	      width: 46px;
-	      background: url("../images/logo-header.png");
+		  height: 65px;
+	      width: 64px;
+	      background: url("../images/logo-header-64x64.png");
 	      display: inline-block;
 		  margin-top: 6px;
 		  margin-left:10px;
@@ -50,17 +50,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
 		.status-title{
 		  display: block;
-		  font-size: 10px;
+		  font-size: 15px;
 		  color: white;
 		  margin-left: 15px;
-		  margin-top:3px;
+		  margin-top:-2px;
 		}
 	}
 
 	.username{
 		width:80%;
 		color:white;
-		font-size:18px;
+		font-size:32px;
 		display:inline-block;
 		font-weight:300;
 		float:left;
@@ -71,10 +71,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	.burger-nav{
 		float:left;
 		width:10%;
-		height: 22px;
-	    background: url("../images/burger-nav.png");
+		height: 64px;
+	    background: url("../images/menu-64x64.svg");
 	    background-repeat:no-repeat;
 	    display: inline-block;
-		margin-top: 25px;
+		margin-top: 14px;
 	}
 }

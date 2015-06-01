@@ -10,25 +10,33 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "base/layout";
 @import "base/reset";
 
-@import "partials/header";
-@import "partials/tabs";
-@import "partials/footer";
-@import "partials/nav_burger";
 
-@import "modules/ipod/notification";
-@import "modules/ipod/login";
-@import "modules/ipod/department";
-@import "modules/ipod/contacts";
-@import "modules/ipod/numpad";
-@import "modules/ipod/incoming_call";
-@import "modules/ipod/calling";
-@import "modules/ipod/call";
+@import "device/ipod/partials/header";
+@import "device/ipod/partials/tabs";
+@import "device/ipod/partials/footer";
+@import "device/ipod/partials/nav_burger";
 
-@media all and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
-	@import "modules/ipad/login";
-	@import "modules/ipad/department";
-	@import "modules/ipad/contacts";
-	@import "modules/ipad/incoming_call";
-	@import "modules/ipad/calling";
-	@import "modules/ipad/call";
+@import "device/ipod/modules/notification";
+@import "device/ipod/modules/login";
+@import "device/ipod/modules/department";
+@import "device/ipod/modules/contacts";
+@import "device/ipod/modules/numpad";
+@import "device/ipod/modules/incoming_call";
+@import "device/ipod/modules/calling";
+@import "device/ipod/modules/call";
+
+
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	@import "device/web/partials/header";
+	@import "device/web/partials/tabs";
+	@import "device/web/partials/footer";
+	@import "device/web/partials/nav_burger";
+
+	@import "device/web/modules/login";
+	@import "device/web/modules/department";
+	@import "device/web/modules/contacts";
+	@import "device/web/modules/incoming_call";
+	@import "device/web/modules/calling";
+	@import "device/web/modules/call";
+	@import "device/web/modules/numpad";
 }
