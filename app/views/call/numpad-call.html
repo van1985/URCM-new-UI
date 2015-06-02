@@ -1,0 +1,43 @@
+  <div class="container-dialpad">
+    <div class="container-search">
+      <input class="search-input" type="text" placeholder="Enter number..." />
+          <div class="button-del">DEL</div>
+    </div>
+    <div class="dialpad-list">
+      <div class="container">
+        <div class="column w33">1</div>
+        <div class="column w33 middle">2</div>
+        <div class="column w33">3</div>
+      </div>
+
+      <div class="container">
+        <div class="column w33">4</div>
+        <div class="column w33 middle">5</div>
+        <div class="column w33">6</div>
+      </div>
+
+      <div class="container">
+        <div class="column w33">7</div>
+        <div class="column w33 middle">8</div>
+        <div class="column w33">9</div>
+      </div>
+
+      <div class="container">
+        <div class="column w33">*</div>
+        <div class="column w33 middle">0</div>
+        <div class="column w33">#</div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container-buttons">
+  <div class="button grey" ng-click="showCallControls()">
+    <div class="back-img"></div>  
+  </div>
+  <div class="button grey" ng-click="showTransferDialPad()">
+    <div class="dialpadimg" ng-class="{'callimg':dialPadVisible}"></div>  
+  </div>
+  <div class="button grey" ng-click="showTransferContactList()" ng-show="showContactsButton">
+    <div class="user-img"></div>  
+  </div>
+</div>
