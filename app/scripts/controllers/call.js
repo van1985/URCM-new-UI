@@ -9,14 +9,38 @@
  */
 angular.module('pocLibsApp')
   .controller('callCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
-    $scope.user={
-    	status: 'online'
+  	//Button mute & speaker enable/disabe
+  	$scope.isMute = false;
+  	$scope.isSpeaker = false;
+
+  	//Views visibility
+    $scope.contactsListVisible= false;
+    $scope.dialPadVisible= false;
+    $scope.showContactsButton=true;
+
+    $scope.showTransferContactList = function() {
+      $scope.contactsListVisible= true;
+      $scope.dialPadVisible= false;
+    };
+
+    $scope.showTransferDialPad = function() {
+      $scope.dialPadVisible= true;
+      $scope.contactsListVisible= false;
+    };
+
+    $scope.showDialPad = function(){
+    	$scope.contactsListVisible= false;
+        $scope.dialPadVisible= true;
+        //reset button visibility
+        $scope.showContactsButton=false;
+    };
+
+    $scope.showCallControls = function() {
+      $scope.contactsListVisible= false;
+      $scope.dialPadVisible= false;
+      //reset button visibility
+      $scope.showContactsButton=true;
     };
 
   });

@@ -14,17 +14,19 @@
 	<div class="duration-title">00:05</div>
 </div>
 
-<!-- buttons -->
-<div class="body-container">
+<!-- control buttons -->
+<div ng-show="!contactsListVisible && !dialPadVisible">
+
+<div class="body-container" >
 <div class="container">
   <div class="column outside-columns">
-    <div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
+    <div class="circle" ng-click="isMute=!isMute" ng-class="{'pressedgreen':isMute}">
       <div class="icon mute"></div>
     </div>
   </div>
   <div class="column middle-column"></div>
   <div class="column outside-columns">
-    <div class="circle" ng-class="{pressedgreen: departments.appliances}" ng-click="departments.appliances= !departments.appliances">
+    <div class="circle" ng-click="isSpeaker=!isSpeaker" ng-class="{'pressedgreen':isSpeaker}">
       <div class="icon speaker"></div>
     </div>
   </div>
@@ -32,14 +34,14 @@
 
 <div class="container">
   <div class="column outside-columns">
-    <div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
+    <div class="circle"  ng-click="showTransferContactList()">
       <div class="arrow"></div>
       <div class="transfer"></div>
     </div>
   </div>
   <div class="column middle-column"></div>
   <div class="column outside-columns">
-    <div class="circle" ng-class="{pressedgreen: departments.appliances}" ng-click="departments.appliances= !departments.appliances">
+    <div class="circle" ng-click="showTransferContactList()">
       <div class="arrow"></div>
       <div class="consultative-transfer"></div>
     </div>
@@ -49,7 +51,7 @@
 <div class="container">
   <div class="column outside-columns"></div>
   <div class="column middle-column">
-  	<div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
+  	<div class="circle" ng-click="showDialPad()">
       <div class="icon dialpad"></div>
     </div>
   </div>
@@ -63,4 +65,181 @@
 		<div class="hangup-img"></div>	
 	</div>
 </div>
+</div>
+
+<!-- Transfer Controls -->
+<div ng-show="contactsListVisible" class="transfer">
+<div class="container-contacts">
+  <div class="container-search">
+    <input class="search-input" type="text" placeholder="Search contacts,departments..." />
+  </div>
+  <div class="contact-list">
+    
+    <div class="container">
+      <div class="column w20">
+        <div class="circle">
+          <div class="contact-logo">
+            <!--<div class="circle busy" ></div>-->
+          </div>
+        </div>
+      </div>
+      <div class="column w80">
+        <div class="notification-from">
+          Marcelo Bonin
+        </div>
+        <div class="call-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column w20">
+        <div class="circle">
+          <div class="contact-logo">
+            <!--<div class="circle busy" ></div>-->
+          </div>
+        </div>
+      </div>
+      <div class="column w80">
+        <div class="notification-from">
+          Cecilia Gauna
+        </div>
+        <div class="call-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column w20">
+        <div class="circle">
+          <div class="contact-logo">
+            <!--<div class="circle busy" ></div>-->
+          </div>
+        </div>
+      </div>
+      <div class="column w80">
+        <div class="notification-from">
+          Edgardo Promenzio
+        </div>
+        <div class="call-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="column w20">
+        <div class="circle">
+          <div class="contact-logo">
+            <!--<div class="circle busy" ></div>-->
+          </div>
+        </div>
+      </div>
+      <div class="column w80">
+        <div class="notification-from">
+          jeronimo Vallelunga
+        </div>
+        <div class="call-img">
+        </div>
+      </div>
+    </div>
+
+        <div class="container">
+      <div class="column w20">
+        <div class="circle">
+          <div class="contact-logo">
+            <!--<div class="circle busy" ></div>-->
+          </div>
+        </div>
+      </div>
+      <div class="column w80">
+        <div class="notification-from">
+          German Botto
+        </div>
+        <div class="call-img">
+        </div>
+      </div>
+    </div>
+
+        <div class="container">
+      <div class="column w20">
+        <div class="circle">
+          <div class="contact-logo">
+            <!--<div class="circle busy" ></div>-->
+          </div>
+        </div>
+      </div>
+      <div class="column w80">
+        <div class="notification-from">
+          Nicolas Avila
+        </div>
+        <div class="call-img">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-buttons">
+  <div class="button grey" ng-click="showCallControls()">
+    <div class="back-img"></div>  
+  </div>
+  <div class="button grey" ng-click="showTransferDialPad()">
+    <div class="dialpad-img"></div>  
+  </div>
+  <div class="button grey" ng-click="showTransferContactList()" ng-show="showContactsButton">
+    <div class="user-img"></div>  
+  </div>
+</div>
+</div>
+
+
+
+<!-- Dial Pad Controls -->
+<div ng-show="dialPadVisible" class="dialpad">
+  <div class="container-dialpad">
+    <div class="container-search">
+      <input class="search-input" type="text" placeholder="Enter number..." />
+          <div class="button-del">DEL</div>
+    </div>
+    <div class="dialpad-list">
+      <div class="container">
+        <div class="column w33">1</div>
+        <div class="column w33 middle">2</div>
+        <div class="column w33">3</div>
+      </div>
+
+      <div class="container">
+        <div class="column w33">4</div>
+        <div class="column w33 middle">5</div>
+        <div class="column w33">6</div>
+      </div>
+
+      <div class="container">
+        <div class="column w33">7</div>
+        <div class="column w33 middle">8</div>
+        <div class="column w33">9</div>
+      </div>
+
+      <div class="container">
+        <div class="column w33">*</div>
+        <div class="column w33 middle">0</div>
+        <div class="column w33">#</div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="container-buttons">
+  <div class="button grey" ng-click="showCallControls()">
+    <div class="back-img"></div>  
+  </div>
+  <div class="button grey" ng-click="showTransferDialPad()">
+    <div class="dialpadimg" ng-class="{'callimg':dialPadVisible}"></div>  
+  </div>
+  <div class="button grey" ng-click="showTransferContactList()" ng-show="showContactsButton">
+    <div class="user-img"></div>  
+  </div>
+</div>
+</div>
+
+
 </div>
