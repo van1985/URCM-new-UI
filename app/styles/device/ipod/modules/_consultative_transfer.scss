@@ -1,0 +1,787 @@
+.consultative-transfer{
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1e5799 0%, #2c81a8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#2c81a8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1e5799 0%,#2c81a8 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #1e5799 0%,#2c81a8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2c81a8',GradientType=0 ); /* IE6-9 */
+
+  .container-img{
+
+  	  text-align: center;
+  	  margin-top:90px;
+
+	  .circle {
+		  width: 112px;
+		  height: 112px;
+		  border: 1px solid #C7C7C7;
+		  border-radius: 50%;
+		  overflow: hidden;
+		  margin: 0 auto;
+		  .contact-img{
+		  	height: 32px;
+		  	width: 32px;
+			background: url("../images/user_32x32.svg");
+			display: inline-block;
+			margin-top:6px;
+		  }
+	  }
+  }
+
+
+    .header-incoming{
+  	  padding-top: 10px;
+  	  padding-bottom: 10px;
+	  margin: 0 auto;
+	  display: table;
+	  height: 14%;
+	  text-align:center;
+	  width: 100%;
+	  background-color: black;
+	  padding-left: 20px;
+
+
+	  	.circle {
+		  width: 48px;
+		  height: 48px;
+		  border: 1px solid #C7C7C7;
+		  border-radius: 50%;
+		  overflow: hidden;
+		  margin: 0 auto;
+		  float:left;
+		  display:inline-block;
+		  .contact-img{
+		  	height: 32px;
+		  	width: 32px;
+			background: url("../images/user_32x32.svg");
+			display: inline-block;
+			margin-top:6px;
+		  }
+	  }
+
+	  .title-call{
+	  		font-size: 14px;
+			float: left;
+			font-weight: 100;
+			font-family: inherit;
+			color:white;
+	  		text-align: center;
+	  		width: 100%;
+	  	}
+
+  	.title-container{
+  		  width: 84%;
+		  height: 40px;
+		  text-align: center;
+		  margin-top:8px;
+
+		  .title{
+		  	color: #FFFFFF;
+		  	font-size:24px;
+		  	font-family: Arial;
+		  }
+  	}
+  }
+
+
+  .tabs-call{
+  	height:40px;
+	background:white;
+	width:100%;
+	text-align:center;
+
+	  .left-tab{
+	  	 height: 100%;
+	  	 width: 50%;
+	  	 display: inline-block;
+
+	  	.active-tab{
+		  float: left;
+		  width: 100%;
+		  padding-right: 5px;
+		  height: 100%;
+		  display: inline-block;
+		  text-align: center;
+
+		  .container{
+		  	border:none;
+		  	background-color:white; //active
+		  	border-radius:5px;
+		  	font-size:14px;
+		  	width:100%;
+			height:100%;
+
+		  	.title-tab{
+		  		color:#515151;
+		  		display: inline-block;
+		  		font-weight: bold;
+	  			font-size: 11px;
+	  			margin-top:10px;
+	  			margin-left:5px;
+		  	}
+		  }
+		}
+
+		.no-active-tab{
+		  float: left;
+		  width: 100%;
+		  height: 100%;
+		  display: inline-block;
+		  margin-left:0px;
+
+		.container{
+		  	border:none;
+		  	background-color:#C3C3C3; //no-active
+		  	border-radius:0px 5px 5px 0px;
+		  	font-size:14px;
+		  	width:100%;
+		  	height:100%;
+		  	padding-left: 8%;
+  			padding-top: 2%;
+
+
+		  	.title-tab{
+		  		color:#FFFFFF;
+		  		display: inline-block;
+		  		font-weight: 500;
+	  			font-size: 11px;
+	  			margin-top:10px;
+	  			float:left;
+	  			margin-left:5px;
+		  	}
+	  }
+		}
+
+	  }
+
+	.right-tab{
+		height: 100%;
+		width: 50%;
+		display: inline-block;
+		float:right;
+
+		.active-tab{
+		  float: left;
+		  width: 100%;
+		  padding-right: 5px;
+		  height: 100%;
+		  display: inline-block;
+		  text-align: center;
+
+		  .container{
+		  	border:none;
+		  	background-color:white; //active
+		  	border-radius:5px;
+		  	font-size:14px;
+		  	width:100%;
+			height:100%;
+
+		  	.title-tab{
+		  		color:#515151;
+		  		display: inline-block;
+		  		font-weight: bold;
+	  			font-size: 11px;
+	  			margin-top:10px;
+	  			margin-left:5px;
+		  	}
+		  }
+		}
+
+		.no-active-tab {
+		      float: left;
+			  width: 100%;
+			  height: 100%;
+			  margin-left: 10%;
+			  display: inline-block;
+
+			.container{
+			  	border:none;
+			  	background-color:#C3C3C3; //no-active
+			  	border-radius:5px 0px 0px 5px;
+			  	font-size:14px;
+			  	width:100%;
+			  	height:100%;
+			  	padding-left: 8%;
+	  			padding-top: 2%;
+
+
+			  	.title-tab{
+			  		color:#FFFFFF;
+			  		display: inline-block;
+			  		font-weight: 500;
+		  			font-size: 11px;
+		  			margin-top:10px;
+		  			float:left;
+		  			margin-left:5px;
+			  	}
+		  }		  
+		}
+
+	}
+
+  }
+
+  .duration-container{
+  	width: 100%;
+  	height: 6%;
+  	background-color: rgba(0, 0, 0, 0.3);
+  	text-align:center;
+  	.duration-title{
+  		font-size:22px;
+  		font-family: Arial;
+  		color: #FFFFFF;
+  	}
+  }
+
+  .body-container{
+  		   width: 100%;
+	   position: absolute;
+	   height: 78%;
+	   overflow:scroll;
+
+	   .container {
+		  display: table;
+		  margin-top:25px;
+		}
+		.column {
+		  display: table-cell;
+
+		  &.middle-column{
+		  		width:140px;
+
+		  		.circle-hangup{
+		  			width: 120px;
+		  			height: 120px;
+		  			border-radius: 50%;
+				    overflow: hidden;
+				    margin: 0 auto;
+
+				    .icon{
+				  	  height: 100%;
+					  width: 100%;
+					  display: inline-block;
+
+					    &.hangup-img{
+						  	height: 48px;
+						  	width: 48px;
+							background: url("../images/phone-hang-up.svg");
+							display: inline-block;
+							margin-top: 35px;
+				  			margin-left: 35px;
+						 }
+
+				  	}
+
+				  	&.red{
+				  		background-color:#E15546;
+				  	}
+		  		}
+
+		  		.circle {
+				  width: 72px;
+				  height: 72px;
+				  border: 1px solid #C7C7C7;
+				  border-radius: 50%;
+				  overflow: hidden;
+				  margin: 0 auto;
+				  
+				  .icon{
+				  	  height: 100%;
+					  width: 100%;
+					  display: inline-block;
+
+					  &.mute{
+					  	background: url("../images/volume-mute.svg");
+					  	background-repeat: no-repeat;
+					  	background-position: 20px 17px;
+					  }
+
+					
+				  }
+
+				  &.pressedgreen{
+				  	background-color: #53DA34;
+				  }
+				  
+
+				}
+		  }
+
+		  &.outside-columns{
+		  	width: 72px;
+			  .circle {
+				  width: 72px;
+				  height: 72px;
+				  border: 1px solid #C7C7C7;
+				  border-radius: 50%;
+				  overflow: hidden;
+				  margin: 0 auto;
+
+				  .arrow{
+						  background: url("../images/forward_26x26.svg");
+						  width: 26px;
+						  height: 26px;
+						  margin-top: 14px;
+						  margin-left: 12px;
+					  }
+
+				  .transfer{
+						  background: url("../images/user_26x26.svg");
+						  width: 26px;
+						  height: 26px;
+						  margin-left: 30px;
+						  margin-top: -8px;
+					  }
+
+				   .consultative-transfer{
+					  	background: url("../images/users_26x26.svg");
+					  	width: 28px;
+						height: 26px;
+						margin-left: 30px;
+						margin-top: -8px;
+					  }
+				  
+				  .icon{
+				  	  height: 100%;
+					  width: 100%;
+					  display: inline-block;
+				
+					  
+
+					  &.speaker{
+					  	background: url("../images/volume-high.svg");
+					  	background-repeat: no-repeat;
+					  	background-position: 20px 17px;
+					  }
+
+					  &.pause{
+					  	background: url("../images/pause-white-32x32.svg");
+					  	background-repeat: no-repeat;
+					  	background-position: 20px 17px;
+					  }
+
+					  
+				  }
+
+				  &.pressedgreen{
+				  	background-color: #53DA34;
+				  }
+
+				}
+
+			.department-title{
+				font-size: 12px;
+			    color: #717171;
+			    text-align: center;
+			    font-family: tahoma;
+			    margin-top: 4px;
+			}
+		  }
+
+		}	
+  }
+
+  .container-buttons{
+  	  position: absolute;
+	  bottom:0px;
+	  background-color: #1E5875;
+	  width: 100%;
+	  padding-top: 15px;
+	  padding-right: 40px;
+
+	  .button{
+		width: 250px;
+		height: 60px;
+		display: inline-block;
+		margin-left: 13%;
+		border-radius: 10px;
+		margin-bottom: 5%;
+
+	  	&.grey{
+	  		background-color:#CCCCCC;
+	  	}
+	  	
+
+	  	.title{
+	  		font-size:18px;
+	  		color:white;
+	  		text-align: center;
+	  		padding-top: 20px;
+	  	}
+
+	  }
+  }
+
+  .transfer{
+  	height:100%;
+  	width:100%;
+
+  	.container-contacts{
+  		  background-color: white;
+		  width: 100%;
+		  height: 64%;
+		  display: inline-block;
+		  overflow: scroll;
+
+		  .container-search{
+		  	padding-top: 10px;
+
+		  	.search-input{
+			  	  border: none;
+				  border-bottom: 1px solid #C3C3C3;
+				  width: 90%;
+				  font-size: 16px;
+				  margin: 0 auto;
+				  padding: 0px;
+				  display: inherit;
+				  height: 35px;
+  			}
+		  }
+
+		  .contact-list{
+		  	  width:100%;
+			  height:100%;
+			  display:inline-block;
+			  overflow:scroll;
+
+			    .container {
+		  display: table;
+		  padding-top:10px;
+		  padding-bottom:10px;
+		  border-bottom: 1px solid #C3C3C3;
+		  width: 100%;
+		  padding-left: 0px;
+  		  padding-right: 0px;
+	}
+  
+  .column {
+		  display: table-cell;
+		  vertical-align:top;
+
+		  &.w20{
+		  	width:20%;
+		  }
+
+		  &.w80{
+		  	width:80%;
+		  }
+
+		  .call-img{
+		  	height: 32px;
+		    width: 32px;
+		    background: url("../images/phone_32x32_blue.svg");
+		    display: inline-block;
+			margin-top: 6px;
+			margin-right:20px;
+			float:right;
+		  }
+
+		  .circle{
+		  	  width: 42px;
+			  height: 42px;
+			  border:1px solid #C7C7C7;
+			  border-radius: 50%;
+			 
+			  margin: 0 auto;
+			  
+			  .contact-logo{
+			  	background: url("../images/user_32x32_grey.svg");
+			    width: 100%;
+			    background-repeat: no-repeat;
+			    height: 100%;
+			    background-position: 4px 3px;
+
+			 .circle {
+		      width: 18px;
+			  height: 16px;
+			  border-radius: 50%;
+			  overflow: hidden;
+			  float: left;
+			  margin-top: 30px;
+
+		    &.online{
+		      background-color: #73E459;
+		    }
+		    &.busy{
+		      background-color:red;
+		    }
+		    &.away{
+		      background-color:orange;
+		    }
+		    &.offline{
+		      background-color:#C3C3C3;
+		    }
+
+		  }
+
+			  }
+		  }
+
+		  .notification-from{
+		  	color: #515151;
+		  	font-size:14px;
+		  	font-weight:bold;
+		  	float:left;
+		  	margin-left:12px;
+		  	margin-top:10px;
+		  }
+		  
+		  .notification-text{
+		  	color: #515151;
+		  	font-size:12px;
+		  	float:left;
+		  	margin-left:12px;
+		  }
+	}
+		  }
+  	}
+
+  	.container-buttons{
+  	    position: absolute;
+	    bottom:0px;
+	    height:12%;
+	    width:100%;
+	    margin-bottom:10px;
+
+	  .button{
+		width: 80px;
+		height: 60px;
+		display: inline-block;
+		margin-left: 6%;
+		border-radius: 10px;
+		margin-bottom: 6%;
+		float:left;
+
+	  	.back-img{
+		  	height: 48px;
+		  	width: 48px;
+			background: url("../images/reply-48x48.svg");
+			display: inline-block;
+			margin-left:20%;
+			margin-top: 5px;
+		 }
+		 .user-img{
+		  	height: 48px;
+		  	width: 48px;
+			background: url("../images/user-48x48.svg");
+			display: inline-block;
+			margin-left:20%;
+			margin-top: 5px;
+		 }
+		 .dialpad-img{
+		  	height: 40px;
+		  	width: 40px;
+			background: url("../images/dial-pad-40x40.svg");
+			display: inline-block;
+			margin-left:25%;
+			margin-top: 9px;
+		 }
+
+	  	&.grey{
+	  		background-color:#C7C7C7;
+	  	}
+	  	
+
+	  	.title{
+	  		font-size:16px;
+	  		color:white;
+	  		text-align: center;
+	  		padding-top: 20px;
+	  	}
+
+	  }
+  	}
+  }
+
+  .dialpad{
+  	height:100%;
+  	width:100%;
+
+  	  	.container-dialpad{
+  		  background-color: white;
+		  width: 100%;
+		  height: 64%;
+		  display: inline-block;
+		  overflow: scroll;
+
+		  .container-search{
+		  	padding-top: 10px;
+
+		  	.search-input{
+			  	  border: none;
+				  border-bottom: 1px solid #C3C3C3;
+				  width: 70%;
+				  font-size: 16px;
+				  margin: 0 auto;
+				  padding: 0px;
+				  display: inherit;
+				  height: 35px;
+				  margin-left: 20px;
+				  float:left;
+  			}
+
+  			.button-del{
+  				  width: 16%;
+				  float: left;
+				  background-color: #C7C7C7;
+				  border-radius: 10%;
+				  color: white;
+				  font-size: 16px;
+				  height: 35px;
+				  margin-left: 10px;
+				  margin-right: 5px;
+				  text-align: center;
+				  padding-top: 5px;
+  			}
+		  }
+
+		  .dialpad-list{
+		  	  width:100%;
+			  height:100%;
+			  display:inline-block;
+			  overflow:scroll;
+
+			    .container {
+			    text-align:center;
+			  display: table;
+			  padding-top:10px;
+			  padding-bottom:10px;
+			  border-bottom: 1px solid #C3C3C3;
+			  width: 100%;
+			  padding-left: 0px;
+	  		  padding-right: 0px;
+	  		  height:22%;
+	}
+  
+  .column {
+		  display: table-cell;
+		  vertical-align:middle;
+		  font-size: 20px;
+  		  color: #2c81a8;
+
+		  &.w33{
+		  	width:33%;
+		  }
+
+		  &.middle{
+		  	  border-left: 1px solid grey;
+  			  border-right: 1px solid grey;
+		  }
+
+		  .call-img{
+		  	height: 32px;
+		    width: 32px;
+		    background: url("../images/phone_32x32_blue.svg");
+		    display: inline-block;
+			margin-top: 6px;
+			margin-right:20px;
+			float:right;
+		  }
+
+		  .circle{
+		  	  width: 42px;
+			  height: 42px;
+			  border:1px solid #C7C7C7;
+			  border-radius: 50%;
+			 
+			  margin: 0 auto;
+			  
+			  .contact-logo{
+			  	background: url("../images/user_32x32_grey.svg");
+			    width: 100%;
+			    background-repeat: no-repeat;
+			    height: 100%;
+			    background-position: 4px 3px;
+
+			  }
+		  }
+
+		  .notification-from{
+		  	color: #515151;
+		  	font-size:14px;
+		  	font-weight:bold;
+		  	float:left;
+		  	margin-left:12px;
+		  	margin-top:10px;
+		  }
+		  
+		  .notification-text{
+		  	color: #515151;
+		  	font-size:12px;
+		  	float:left;
+		  	margin-left:12px;
+		  }
+	}
+		  }
+  	}
+  	  	.container-buttons{
+  	    position: absolute;
+	    bottom:0px;
+	    height:12%;
+	    width:100%;
+	    margin-bottom:10px;
+
+	  .button{
+		width: 80px;
+		height: 60px;
+		display: inline-block;
+		margin-left: 6%;
+		border-radius: 10px;
+		margin-bottom: 6%;
+		float:left;
+
+	  	.back-img{
+		  	height: 48px;
+		  	width: 48px;
+			background: url("../images/reply-48x48.svg");
+			display: inline-block;
+			margin-left:20%;
+			margin-top: 5px;
+		 }
+		 .user-img{
+		  	height: 48px;
+		  	width: 48px;
+			background: url("../images/user-48x48.svg");
+			display: inline-block;
+			margin-left:20%;
+			margin-top: 5px;
+		 }
+		 .dialpadimg{
+		  	height: 40px;
+		  	width: 40px;
+			background: url("../images/dial-pad-40x40.svg");
+			display: inline-block;
+			margin-left:25%;
+			margin-top: 9px;
+		 }
+		 .callimg{
+		 	height:48px;
+		 	width: 48px;
+		 	background: url("../images/phone-white-48x48.svg");
+		 	display:inline-block;
+		 	margin-left:20%;
+		 	margin-top:5px;
+		 }
+
+	  	&.grey{
+	  		background-color:#C7C7C7;
+	  	}
+	  	
+
+	  	.title{
+	  		font-size:16px;
+	  		color:white;
+	  		text-align: center;
+	  		padding-top: 20px;
+	  	}
+
+	  }
+  	}
+  }
+
+}

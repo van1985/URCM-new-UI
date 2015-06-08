@@ -1,0 +1,118 @@
+<div ng-controller="consultativeTransferCtrl" class="consultative-transfer">
+
+<div class="header-incoming">
+
+	<div class="circle">
+		<div class="contact-img"></div>
+	</div>
+	
+	<div class="title-container">
+		<div class="title"></div>
+	</div>
+</div>
+<div class="duration-container">
+	<div class="duration-title">00:05</div>
+</div>
+
+<!-- tabs -->
+
+<div class="tabs-call">
+
+<div class="left-tab">
+  <div ng-class="{'active-tab': isVisibleControlsUser1, 'no-active-tab': !isVisibleControlsUser1 }" ng-click="changeToUser1()">
+    <div class="container"  ng-click="changeToUser1()">
+        <div class="title-tab">Cecilia Gauna</div>
+      </div>
+  </div>
+</div>
+
+<div class="right-tab">
+<div ng-class="{'active-tab': isVisibleControlsUser2, 'no-active-tab': !isVisibleControlsUser2 }" ng-click="changeToUser2()">
+    <div  class="container" ng-click="changeToUser1()">
+      <div class="title-tab">Marcelo Bonin</div>
+    </div>
+</div>
+</div>
+
+<span class="tab"></span>
+
+</div>
+
+
+<!-- control buttons - User 1 -->
+
+<div class="body-container" ng-show="isVisibleControlsUser1" >
+<div class="container">
+  <div class="column outside-columns">
+    <div class="circle">
+      <div class="icon pause"></div>
+    </div>
+  </div>
+  <div class="column middle-column">
+    <div class="circle">
+      <div class="icon mute"></div>
+    </div>
+  </div>
+  <div class="column outside-columns">
+    <div class="circle">
+      <div class="icon speaker"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="column outside-columns"></div>
+  <div class="column middle-column">
+  	<div class="circle-hangup red">
+      <div class="icon hangup-img"></div>
+    </div>
+  </div>
+  <div class="column outside-columns"></div>
+</div>
+
+</div>
+
+<!-- control buttons - User 2 -->
+
+<div class="body-container" ng-show="isVisibleControlsUser2">
+<div class="container">
+  <div class="column outside-columns">
+    <div class="circle">
+      <div class="icon pause"></div>
+    </div>
+  </div>
+  <div class="column middle-column">
+    <div class="circle">
+      <div class="icon mute"></div>
+    </div>
+  </div>
+  <div class="column outside-columns">
+    <div class="circle">
+      <div class="icon speaker"></div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="column outside-columns"></div>
+  <div class="column middle-column">
+    <div class="circle-hangup red">
+      <div class="icon hangup-img"></div>
+    </div>
+  </div>
+  <div class="column outside-columns"></div>
+</div>
+
+</div>
+
+
+<!-- Transfer button -->
+<div class="container-buttons">
+	<div class="button grey">
+		<div class="title">Transfer</div>	
+	</div>
+</div>
+
+</div>

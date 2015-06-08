@@ -8,7 +8,7 @@
  * Controller of the pocLibsApp
  */
 angular.module('pocLibsApp')
-  .controller('callCtrl', function ($scope) {
+  .controller('callCtrl', function ($scope,$location) {
 
   	//Button mute & speaker enable/disabe
   	$scope.isMute = false;
@@ -41,6 +41,10 @@ angular.module('pocLibsApp')
       $scope.dialPadVisible= false;
       //reset button visibility
       $scope.showContactsButton=true;
+    };
+
+    $scope.back = function(){
+      $location.path("/contacts");
     };
 
   });

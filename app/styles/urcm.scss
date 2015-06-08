@@ -24,6 +24,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "device/ipod/modules/incoming_call";
 @import "device/ipod/modules/calling";
 @import "device/ipod/modules/call";
+@import "device/ipod/modules/consultative_transfer";
 
 
 @media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 

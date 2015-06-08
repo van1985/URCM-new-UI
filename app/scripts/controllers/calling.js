@@ -8,7 +8,7 @@
  * Controller of the pocLibsApp
  */
 angular.module('pocLibsApp')
-  .controller('callingCtrl', function ($scope) {
+  .controller('callingCtrl', function ($scope ,$location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -17,6 +17,10 @@ angular.module('pocLibsApp')
 
     $scope.user={
     	status: 'online'
+    };
+
+    $scope.back = function(){
+      $location.path("/contacts");
     };
 
   });

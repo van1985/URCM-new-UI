@@ -56,6 +56,10 @@ angular
         templateUrl: 'views/call/call.html',
         controller: 'callCtrl'
       })
+      .when('/consultativeTransfer', {
+        templateUrl: 'views/call/consultative-transfer.html',
+        controller: 'consultativeTransferCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
