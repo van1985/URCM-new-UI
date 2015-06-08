@@ -23,4 +23,6 @@ angular.module('pocLibsApp')
   		$scope.isVisibleControlsUser2 = true;
   	};
 
+    $scope.countTabs =3;
+
   });

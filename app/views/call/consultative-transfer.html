@@ -18,23 +18,23 @@
 
 <div class="tabs-call">
 
-<div class="left-tab">
-  <div ng-class="{'active-tab': isVisibleControlsUser1, 'no-active-tab': !isVisibleControlsUser1 }" ng-click="changeToUser1()">
-    <div class="container"  ng-click="changeToUser1()">
+<div class="tab" >
+  <div class="container-tab" ng-click="changeToUser1()">
+    <div class="container-title" ng-class="{'active': isVisibleControlsUser1}">
         <div class="title-tab">Cecilia Gauna</div>
       </div>
   </div>
 </div>
 
-<div class="right-tab">
-<div ng-class="{'active-tab': isVisibleControlsUser2, 'no-active-tab': !isVisibleControlsUser2 }" ng-click="changeToUser2()">
-    <div  class="container" ng-click="changeToUser1()">
+
+
+<div class="tab" >
+<div class="container-tab" ng-click="changeToUser2()">
+    <div  class="container-title" ng-class="{'active': isVisibleControlsUser2}">
       <div class="title-tab">Marcelo Bonin</div>
     </div>
 </div>
 </div>
-
-<span class="tab"></span>
 
 </div>
 

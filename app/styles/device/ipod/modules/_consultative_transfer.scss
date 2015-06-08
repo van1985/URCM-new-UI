@@ -91,38 +91,45 @@
 
   .tabs-call{
   	height:40px;
-	background:white;
 	width:100%;
 	text-align:center;
+	display: -webkit-inline-flex; /* Safari */
+  	display: inline-flex;
 
-	  .left-tab{
+	  .tab{
 	  	 height: 100%;
 	  	 width: 50%;
 	  	 display: inline-block;
+	  	 float: left;
 
-	  	.active-tab{
-		  float: left;
+	  	.container-tab{
 		  width: 100%;
-		  padding-right: 5px;
 		  height: 100%;
 		  display: inline-block;
 		  text-align: center;
+		  margin-right: 15px;
+  		  margin-left: 15px;
 
-		  .container{
+		  .container-title{
 		  	border:none;
-		  	background-color:white; //active
-		  	border-radius:5px;
 		  	font-size:14px;
-		  	width:100%;
-			height:100%;
+		  	width:80%;
+			height:60%;
+
+			&.active{
+				border-bottom:solid 1px #2C81A8;
+				box-shadow: 0 3px 2px -2px black;
+			}
 
 		  	.title-tab{
-		  		color:#515151;
-		  		display: inline-block;
-		  		font-weight: bold;
-	  			font-size: 11px;
-	  			margin-top:10px;
+		  		color:white;
+		  		font-weight: 300;
+	  			font-size: 12px;
+	  			margin-top:16px;
 	  			margin-left:5px;
+	  			white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 		  	}
 		  }
 		}
@@ -136,7 +143,6 @@
 
 		.container{
 		  	border:none;
-		  	background-color:#C3C3C3; //no-active
 		  	border-radius:0px 5px 5px 0px;
 		  	font-size:14px;
 		  	width:100%;
