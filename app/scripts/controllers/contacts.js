@@ -19,6 +19,10 @@ angular.module('pocLibsApp')
     	status: 'online'
     };
 
+    $scope.opts = {
+      disable: 'left'
+    };
+
 
     $scope.navigate = function(view){
       $location.path("/"+view);
