@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M14.979,26.104c-2.113,0-4.183-0.617-5.992-1.809c-2.476-1.632-4.167-4.141-4.761-7.064
+		c-1.219-5.995,2.62-11.875,8.558-13.107c0.538-0.114,1.07,0.235,1.182,0.776c0.112,0.541-0.235,1.07-0.776,1.182
+		c-4.862,1.009-8.004,5.832-7.004,10.75c0.488,2.398,1.874,4.456,3.902,5.793c1.999,1.316,4.383,1.778,6.721,1.289
+		c4.862-1.01,8.005-5.832,7.004-10.75c-0.721-3.545-3.448-6.321-6.949-7.074c-0.54-0.116-0.884-0.647-0.768-1.188
+		c0.115-0.54,0.65-0.883,1.188-0.768c4.278,0.919,7.61,4.307,8.489,8.63c1.22,5.994-2.619,11.874-8.558,13.107
+		C16.472,26.028,15.723,26.104,14.979,26.104z">
+        <animateTransform xmlns="http://www.w3.org/2000/svg" attributeName="transform" begin="0s" type="rotate" from="0 15 15" to="360 15 15" repeatCount="indefinite" dur="1s"/>
+    </path>
+</g>
+</svg>

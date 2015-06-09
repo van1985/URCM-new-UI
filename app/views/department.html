@@ -1,3 +1,4 @@
+<div class="ss-widgets">
 <div class="department">
   <div class="header">
     <div class="left-arrow"></div>
@@ -5,37 +6,42 @@
     <div class="right-arrow"></div>
   </div>
   <div class="departments-container">
+
     <div class="container">
-      <div class="column outside-columns float-left">
+      <div class="column outside-columns">
         <div class="circle" ng-class="{pressedgreen: departments.sporting}" ng-click="departments.sporting= !departments.sporting">
           <div class="icon sporting"></div>
         </div>
         <div class="department-title">SPORTING GOODS</div>
       </div>
       <div class="column middle-column"></div>
-      <div class="column outside-columns float-right">
+      <div class="column outside-columns">
         <div class="circle" ng-class="{pressedred: departments.appliances}" ng-click="departments.appliances= !departments.appliances">
           <div class="icon appliances"></div>
         </div>
         <div class="department-title">APPLIANCES</div>
       </div>
     </div>
-        <div class="container">
-      <div class="column outside-columns float-left">
+
+
+    <div class="container">
+      <div class="column outside-columns">
         <div class="circle" ng-class="{pressedblue: departments.jewelry}" ng-click="departments.jewelry= !departments.jewelry">
           <div class="icon jewelry"></div>
         </div>
         <div class="department-title">JEWELRY</div>
       </div>
       <div class="column middle-column"></div>
-      <div class="column outside-columns float-right">
+      <div class="column outside-columns">
         <div class="circle" ng-class="{pressedpink: departments.garden}" ng-click="departments.garden= !departments.garden">
           <div class="icon garden"></div>
         </div>
         <div class="department-title">LAW & GARDEN</div>
       </div>
     </div>
-        <div class="container last-row">
+
+
+    <div class="container">
       <div class="column outside-columns">
         <div class="circle" ng-class="{pressedviolet: departments.electronics}" ng-click="departments.electronics= !departments.electronics">
           <div class="icon electronics"></div>
@@ -50,8 +56,46 @@
         <div class="department-title">TOOL & PAINT</div>
       </div>
     </div>
+
+
+    <div class="container">
+      <div class="column outside-columns">
+        <div class="circle" ng-class="{pressedviolet: departments.electronics}" ng-click="departments.electronics= !departments.electronics">
+          <div class="icon electronics"></div>
+        </div>
+        <div class="department-title">ELECTRONICS</div>
+      </div>
+      <div class="column middle-column"></div>
+      <div class="column outside-columns">
+        <div class="circle" ng-class="{pressedorange: departments.tools}" ng-click="departments.tools= !departments.tools">
+          <div class="icon tool"></div>
+        </div>
+        <div class="department-title">TOOL & PAINT</div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="column outside-columns">
+        <div class="circle" ng-class="{pressedviolet: departments.electronics}" ng-click="departments.electronics= !departments.electronics">
+          <div class="icon electronics"></div>
+        </div>
+        <div class="department-title">ELECTRONICS</div>
+      </div>
+      <div class="column middle-column"></div>
+      <div class="column outside-columns">
+        <div class="circle" ng-class="{pressedorange: departments.tools}" ng-click="departments.tools= !departments.tools">
+          <div class="icon tool"></div>
+        </div>
+        <div class="department-title">TOOL & PAINT</div>
+      </div>
+    </div>
+
   </div>
 
   <div class="select-all-button"></div>
-  <button class="connect-button" ng-click="connect()">CONNECT</button>
+      <button class="connect-button spinner-inline" ng-click="connect()" ssloading loading-event="set-department">CONNECT
+        <div class="spinner full-page"></div>
+      </button>
+  </div>
 </div>

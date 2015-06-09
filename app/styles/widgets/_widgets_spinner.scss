@@ -1,0 +1,42 @@
+//Variables
+$color-gray-dark: #333333;
+$default-radious:4px;
+
+.ss-widgets{
+
+    .spinner-inline{
+        display: block;
+    }
+    .spinner{
+        display: none;
+    }
+    .show-loading{
+        position: relative;
+
+        &.full-page-home{
+            position: static !important;
+        }
+    }
+    .show-loading .spinner{
+        display: block;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        opacity: .7;
+        z-index: 300;
+        background-image:url('../../images/loading_white_animated.svg');
+        background-repeat:no-repeat;
+        background-position:center; 
+        background-color: $color-gray-dark;
+        border-radius: $default-radious;
+
+        &.by-element{
+            position: absolute;
+        }
+
+        &.full-page{
+            position: fixed;
+        }
+    }
+}

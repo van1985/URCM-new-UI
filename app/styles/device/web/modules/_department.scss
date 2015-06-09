@@ -42,7 +42,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	}
 
 	.departments-container{
-	     display: table-cell;
+	     display: inline;
 		 margin-top: 15px;
 		 width: 100% !important;
 		 float: left;
@@ -51,7 +51,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 
 	   .container {
 		  
-		  display: table-cell;
+		 display: inline;
 		 margin-top: 15px;
 		 width: 40% !important;
 		 float: left;

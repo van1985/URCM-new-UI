@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'snap'
+    'snap',
+    'Directives'
   ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -11,6 +11,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "base/reset";
 
 
+@import "widgets/widgets_spinner";
+
 @import "device/ipod/partials/header";
 @import "device/ipod/partials/tabs";
 @import "device/ipod/partials/footer";

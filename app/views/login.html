@@ -9,7 +9,11 @@
       <p class="alert-error">The enterprise ID / password combination you entered is incorrect. Try again.</p>
       <input type="text" class="login-input" placeholder="enterprise ID" ng-model="user.name" required>
       <input type="password" class="login-input" placeholder="enterprise password" ng-model="user.password" required>
-      <button class="login-button">LOG IN</button>
+      <div class="ss-widgets">
+        <button class="login-button spinner-inline" ssloading loading-event="login">LOG IN
+          <div class="spinner by-element"></div>
+        </button>
+      </div>
     </div>    
   </form>
 </div>

@@ -8,7 +8,7 @@
  * Controller of the pocLibsApp
  */
 angular.module('pocLibsApp')
-  .controller('DepartmentCtrl', function ($scope,$location) {
+  .controller('DepartmentCtrl', function ($scope,$location,$rootScope,$timeout) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -25,7 +25,13 @@ angular.module('pocLibsApp')
     };
 
     $scope.connect = function() {
-      $location.path("/contacts");
+      $scope.setDepartmentDisableFlag = true;
+      $rootScope.$broadcast('set-department-start');
+      $timeout( function(){
+          $rootScope.$broadcast('set-department-end');
+          $scope.setDepartmentDisableFlag = false;
+          $location.path("/contacts");
+      }, 5000);
     };
 
   });
