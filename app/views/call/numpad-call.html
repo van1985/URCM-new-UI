@@ -31,13 +31,22 @@
     </div>
   </div>
   <div class="container-buttons">
-  <div class="button grey" ng-click="showCallControls()">
+  <div class="button grey" 
+       touch-event
+       touch-start-class='touch-start'
+      ng-click="showCallControls()">
     <div class="back-img"></div>  
   </div>
-  <div class="button grey" ng-click="showTransferDialPad()">
+  <div class="button grey" 
+       touch-event
+       touch-start-class='touch-start'
+       ng-click="showTransferDialPad()">
     <div class="dialpadimg" ng-class="{'callimg':dialPadVisible}"></div>  
   </div>
-  <div class="button grey" ng-click="showTransferContactList()" ng-show="showContactsButton">
+  <div class="button grey" 
+       touch-event
+       touch-start-class='touch-start'
+       ng-click="showTransferContactList()" ng-show="showContactsButton">
     <div class="user-img"></div>  
   </div>
 </div>

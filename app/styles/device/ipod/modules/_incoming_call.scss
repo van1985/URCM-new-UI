@@ -98,6 +98,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	  	&.green{
 	  		background-color:#50E669;
 	  	}
+	  	&.touch-start-red{
+	  		background-color:#B64539 !important;
+	  	}
+	  	&.touch-start-green{
+	  		background-color:#2E8B3D !important;
+	  	}
 
 	  	.title{
 	  		font-size:16px;

@@ -90,6 +90,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 	  	&.red{
 	  		background-color:#E15546;
 	  	}
+	  	&.touch-start{
+	  		background-color:#B64539 !important;
+	  	}
 	  	
 
 	  	.title{

@@ -20,13 +20,21 @@
 <div class="body-container" >
 <div class="container">
   <div class="column outside-columns">
-    <div class="circle" ng-click="isMute=!isMute" ng-class="{'pressedgreen':isMute}">
+    <div class="circle" 
+          touch-event
+          touch-start-class='touch-start'
+          ng-click="isMute=!isMute" 
+          ng-class="{'pressedgreen':isMute}">
       <div class="icon mute"></div>
     </div>
   </div>
   <div class="column middle-column"></div>
   <div class="column outside-columns">
-    <div class="circle" ng-click="isSpeaker=!isSpeaker" ng-class="{'pressedgreen':isSpeaker}">
+    <div class="circle" 
+          touch-event
+          touch-start-class='touch-start'
+          ng-click="isSpeaker=!isSpeaker" 
+          ng-class="{'pressedgreen':isSpeaker}">
       <div class="icon speaker"></div>
     </div>
   </div>
@@ -34,14 +42,20 @@
 
 <div class="container">
   <div class="column outside-columns">
-    <div class="circle"  ng-click="showTransferContactList()">
+    <div class="circle"  
+          touch-event
+          touch-start-class='touch-start'
+          ng-click="showTransferContactList()">
       <div class="arrow"></div>
       <div class="transfer"></div>
     </div>
   </div>
   <div class="column middle-column"></div>
   <div class="column outside-columns">
-    <div class="circle" ng-click="showTransferContactList()">
+    <div class="circle" 
+          touch-event
+          touch-start-class='touch-start'
+          ng-click="showTransferContactList()">
       <div class="arrow"></div>
       <div class="consultative-transfer"></div>
     </div>
@@ -51,7 +65,10 @@
 <div class="container">
   <div class="column outside-columns"></div>
   <div class="column middle-column">
-  	<div class="circle" ng-click="showDialPad()">
+  	<div class="circle" 
+          touch-event
+          touch-start-class='touch-start'
+          ng-click="showDialPad()">
       <div class="icon dialpad"></div>
     </div>
   </div>
@@ -61,7 +78,10 @@
 </div>
 
 <div class="container-buttons">
-	<div class="button red" ng-click="back()">
+	<div class="button red" 
+        touch-event
+        touch-start-class='touch-start'
+        ng-click="back()">
 		<div class="hangup-img"></div>	
 	</div>
 </div>

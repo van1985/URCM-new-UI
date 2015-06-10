@@ -141,6 +141,10 @@
 				  &.pressedgreen{
 				  	background-color: #53DA34;
 				  }
+
+				  &.touch-start{
+				  	background-color: #1e5799;
+				  }
 				  
 
 				}
@@ -204,6 +208,10 @@
 				  	background-color: #53DA34;
 				  }
 
+				  &.touch-start{
+				  	background-color: #1e5799;
+				  }
+
 				}
 
 			.department-title{
@@ -241,6 +249,10 @@
 
 	  	&.red{
 	  		background-color:#E15546;
+	  	}
+
+	  	&.touch-start{
+	  		background-color:#B64539 !important;
 	  	}
 	  	
 
@@ -421,6 +433,10 @@
 
 	  	&.grey{
 	  		background-color:#C7C7C7;
+	  	}
+
+	  	&.touch-start{
+	  		background-color: #8B8B8B !important;
 	  	}
 	  	
 
@@ -607,6 +623,10 @@
 
 	  	&.grey{
 	  		background-color:#C7C7C7;
+	  	}
+
+	  	&.touch-start{
+	  		background-color: #8B8B8B !important;
 	  	}
 	  	
 

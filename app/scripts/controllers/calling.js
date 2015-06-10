@@ -20,7 +20,7 @@ angular.module('pocLibsApp')
     };
 
     $scope.back = function(){
-      $location.path("/contacts");
+      //$location.path("/contacts");
     };
 
   });

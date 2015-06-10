@@ -13,7 +13,10 @@ angular.module('Directives').directive('touchEvent',
                 });
 
                 element.on('touchend', function(event){
-                    element.removeClass(attrs.touchEndClass);
+                    element.removeClass(attrs.touchStartClass);
+                    if (attrs.touchEndClass){
+                        element.addClass(attrs.touchEndClass);
+                    }
                 });
             }
         }
