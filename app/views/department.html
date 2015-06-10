@@ -1,3 +1,15 @@
+<style>
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+.press{
+  background-color:#154A62 !important;
+}
+
+</style>
 <div class="ss-widgets">
 <div class="department">
   <div class="header">
@@ -57,45 +69,50 @@
       </div>
     </div>
 
-
-    <div class="container">
-      <div class="column outside-columns">
-        <div class="circle" ng-class="{pressedviolet: departments.electronics}" ng-click="departments.electronics= !departments.electronics">
-          <div class="icon electronics"></div>
-        </div>
-        <div class="department-title">ELECTRONICS</div>
-      </div>
-      <div class="column middle-column"></div>
-      <div class="column outside-columns">
-        <div class="circle" ng-class="{pressedorange: departments.tools}" ng-click="departments.tools= !departments.tools">
-          <div class="icon tool"></div>
-        </div>
-        <div class="department-title">TOOL & PAINT</div>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="column outside-columns">
-        <div class="circle" ng-class="{pressedviolet: departments.electronics}" ng-click="departments.electronics= !departments.electronics">
-          <div class="icon electronics"></div>
-        </div>
-        <div class="department-title">ELECTRONICS</div>
-      </div>
-      <div class="column middle-column"></div>
-      <div class="column outside-columns">
-        <div class="circle" ng-class="{pressedorange: departments.tools}" ng-click="departments.tools= !departments.tools">
-          <div class="icon tool"></div>
-        </div>
-        <div class="department-title">TOOL & PAINT</div>
-      </div>
-    </div>
-
   </div>
 
   <div class="select-all-button"></div>
-      <button class="connect-button spinner-inline" ng-click="connect()" ssloading loading-event="set-department">CONNECT
+      <button 
+          id="department-button"
+          ontouchstart="touchStart(event);" 
+          ontouchend="touchEnd(event);"
+          class="connect-button spinner-inline" ng-click="connect()" ssloading loading-event="set-department">CONNECT
         <div class="spinner full-page"></div>
       </button>
   </div>
 </div>
+<script type="text/javascript">
+
+function touchStart(event) {
+  //alert('touch start');
+  var element=document.getElementById("department-button");
+  addClass(element,'press');
+
+};
+
+function touchEnd(event) {
+  //alert('touch end');
+    var element=document.getElementById("department-button");
+    removeClass(element,'press');
+};
+
+function addClass( element, classname ) {
+    var cn = element.className;
+    //test for existance
+    if( cn.indexOf( classname ) != -1 ) {
+      return;
+    }
+    //add a space if the element already has class
+    if( cn != '' ) {
+      classname = ' '+classname;
+    }
+    element.className = cn+classname;
+}
+
+function removeClass( element, classname ) {
+    var cn = element.className;
+    var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
+    cn = cn.replace( rxp, '' );
+    element.className = cn;
+}
+ </script>

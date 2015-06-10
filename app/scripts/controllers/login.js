@@ -19,9 +19,9 @@ angular.module('pocLibsApp')
       $scope.loginDisableFlag = true;
       $rootScope.$broadcast('login-start');
       $timeout( function(){
-          $rootScope.$broadcast('login-end');
           $scope.loginDisableFlag = false;
           $location.path("/department");
+          $rootScope.$broadcast('login-end');    
       }, 5000);
     };
 

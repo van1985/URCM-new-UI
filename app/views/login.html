@@ -1,6 +1,18 @@
+<style>
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+.press{
+  background-color:#36AE3C !important;
+}
+
+</style>
 <div class="login">  
   <form ng-submit="login()" novalidate>
-    <div class="logo-urcm"></div>
+    <div id="logo" class="logo-urcm"></div>
     <div class="title-urcm">
     	<div class="call-title">CALL</div>
     	<div class="sears-title">SEARS</div>
@@ -10,10 +22,60 @@
       <input type="text" class="login-input" placeholder="enterprise ID" ng-model="user.name" required>
       <input type="password" class="login-input" placeholder="enterprise password" ng-model="user.password" required>
       <div class="ss-widgets">
-        <button class="login-button spinner-inline" ssloading loading-event="login">LOG IN
+        <button
+               id="login-button"
+               ontouchstart="touchStart(event);" 
+               ontouchend="touchEnd(event);"
+               class="login-button spinner-inline" ssloading loading-event="login">LOG IN
           <div class="spinner by-element"></div>
         </button>
       </div>
     </div>    
   </form>
 </div>
+ <script type="text/javascript">
+var obj = document.getElementById('logo');
+obj.addEventListener('touchmove', function(event) {
+  // If there's exactly one finger inside this element
+  if (event.targetTouches.length == 1) {
+    var touch = event.targetTouches[0];
+    // Place element where the finger is
+    obj.style.left = touch.pageX + 'px';
+    obj.style.top = touch.pageY + 'px';
+  }
+}, false);
+
+
+function touchStart(event) {
+  //alert('touch start');
+  var element=document.getElementById("login-button");
+  addClass(element,'press');
+
+};
+
+function touchEnd(event) {
+  //alert('touch end');
+    var element=document.getElementById("login-button");
+    removeClass(element,'press');
+};
+
+function addClass( element, classname ) {
+    var cn = element.className;
+    //test for existance
+    if( cn.indexOf( classname ) != -1 ) {
+      return;
+    }
+    //add a space if the element already has class
+    if( cn != '' ) {
+      classname = ' '+classname;
+    }
+    element.className = cn+classname;
+}
+
+function removeClass( element, classname ) {
+    var cn = element.className;
+    var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
+    cn = cn.replace( rxp, '' );
+    element.className = cn;
+}
+ </script>
