@@ -23,9 +23,9 @@
       <input type="password" class="login-input" placeholder="enterprise password" ng-model="user.password" required>
       <div class="ss-widgets">
         <button
-               id="login-button"
-               ontouchstart="touchStart(event);" 
-               ontouchend="touchEnd(event);"
+               touch-event
+               touch-start-class='press'
+               touch-end-class='press'
                class="login-button spinner-inline" ssloading loading-event="login">LOG IN
           <div class="spinner by-element"></div>
         </button>
@@ -45,37 +45,4 @@ obj.addEventListener('touchmove', function(event) {
   }
 }, false);
 
-
-function touchStart(event) {
-  //alert('touch start');
-  var element=document.getElementById("login-button");
-  addClass(element,'press');
-
-};
-
-function touchEnd(event) {
-  //alert('touch end');
-    var element=document.getElementById("login-button");
-    removeClass(element,'press');
-};
-
-function addClass( element, classname ) {
-    var cn = element.className;
-    //test for existance
-    if( cn.indexOf( classname ) != -1 ) {
-      return;
-    }
-    //add a space if the element already has class
-    if( cn != '' ) {
-      classname = ' '+classname;
-    }
-    element.className = cn+classname;
-}
-
-function removeClass( element, classname ) {
-    var cn = element.className;
-    var rxp = new RegExp( "\\s?\\b"+classname+"\\b", "g" );
-    cn = cn.replace( rxp, '' );
-    element.className = cn;
-}
  </script>
